@@ -1,0 +1,70 @@
+#######################################
+   Palavra soteada:  pais
+
+  Letras Usadas: a, e, o, u, r, s, i, c, p, 
+
+#######################################
+   Palavra soteada:  cor
+
+  Letras Usadas: a, e, i, o, s, r, d, p, 
+
+#######################################
+   Palavra soteada:  avo
+
+  Letras Usadas: o, s, r, p, e, a, m, v, 
+
+#######################################
+   Palavra soteada:  historia
+
+  Letras Usadas: a, e, i, o, r, s, v, h, t, 
+
+#######################################
+   Palavra soteada:  montanha
+
+  Letras Usadas: a, e, i, o, r, s, m, n, t, h, 
+
+#######################################
+   Palavra soteada:  mobilia
+
+  Letras Usadas: a, b, l, f, y, u, v, z, x, 
+
+#######################################
+   Palavra soteada:  palavra
+
+  Letras Usadas: g, b, a, m, r, s, n, t, 
+
+#######################################
+   Palavra soteada:  passaro.
+  Letras Usadas: a, b, e, o, i, m, r, s, p, ., 
+
+#######################################
+   Palavra soteada:  estrutura
+  Letras Usadas: a, b, c, e, i, o, u, r, s, t, 
+
+#######################################
+   Palavra soteada:  universo
+  Letras Usadas: a, o, i, u, e, n, v, r, s, 
+
+#######################################
+   Palavra soteada:  universo
+  Letras Usadas: a, o, i, u, e, n, v, r, s, 
+
+#######################################
+   Palavra soteada:  pensamento
+  Letras Usadas: j, a, o, p, e, l, m, s, n, t, 
+
+#######################################
+   Palavra soteada:  pensamento
+  Letras Usadas: j, a, o, p, e, l, m, s, n, t, 
+
+#######################################
+   Palavra soteada:  frase
+  Letras Usadas: a, e, r, f, s, 
+
+#######################################
+   Palavra soteada:  frase
+  Letras Usadas: a, e, r, f, s, 
+
+#######################################
+   Palavra soteada:  tesouro
+  Letras Usadas: a, e, i, o, r, s, t, y, p, m, n, 

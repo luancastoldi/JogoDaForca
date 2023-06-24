@@ -8,8 +8,9 @@ public class Jogo {
     public Jogo() {
         logica = new Logica();
         String palavraSorteada = logica.sorteaPalavra();
-        System.out.println(palavraSorteada);
-
+        //System.out.println(palavraSorteada);
+        
+        String letrasUsadas ="  Letras Usadas: ";
         String digitos = "";
         while (logica.temChance()) {
             String[] boneca = logica.desenhaBoneco(true);
@@ -20,6 +21,8 @@ public class Jogo {
 
             char letra =  Entrada.leiaChar(telinha);
             letra = (letra + "").toLowerCase().charAt(0);
+            
+            letrasUsadas += letra + ", ";
 
             if(digitos.contains(String.valueOf(letra))){
                 System.out.println(letra + " - Está letra já foi escolhida!");
@@ -28,10 +31,10 @@ public class Jogo {
             if(palavraSorteada.contains(String.valueOf(letra))){
                 System.out.println("Acertou!");
                 digitos += letra;
-               
             }else{
                 System.out.println("Errou!");
                 logica.adicionaErro();
+                
             }
 
             if(letra == '3'){
@@ -43,11 +46,13 @@ public class Jogo {
 
             if(palavraSorteada.equals(palavraAtualizada)){
                 System.out.println("Parabéns!! - Jogo Finalizado");
+                logica.salvarHistorico(letrasUsadas, palavraSorteada);
                 new Menu();
                 break;
             }
         }
-        new GameOver();
+        logica.salvarHistorico(letrasUsadas, palavraSorteada);
+        
     }
 
     public String atualizaTraco(String palavra, String digitos) {

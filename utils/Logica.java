@@ -23,7 +23,7 @@ public class Logica {
 
         int rand = (int) (Math.random() * palavras.length);
         String retorno = palavras[rand];
-        
+
         return retorno;
     }
 
@@ -33,6 +33,9 @@ public class Logica {
 
     public void adicionaErro() {
         erros++;
+        if (erros==6) {
+            new GameOver();
+        }
     }
 
     public int maxErros() {
@@ -71,5 +74,44 @@ public class Logica {
         };
 
         return retorno;
+    }
+    
+    public void salvarHistorico(String letras, String palavraSorteada) {
+        Arquivo historico = new Arquivo("db/historico.txt");
+        String linha, historicoCompleto = "";
+        
+        historico.abrirLeitura();
+        linha = historico.lerLinha();
+        
+        while (linha!=null) {
+            historicoCompleto = historicoCompleto + linha + "\n";   
+            linha = historico.lerLinha();
+        }
+        
+        historico.fecharArquivo();
+        historico.abrirEscrita();
+
+        historico.escreverLinha(historicoCompleto);
+        historico.escreverLinha("#######################################");
+        historico.escreverLinha("   Palavra soteada: "+ palavraSorteada);
+        historico.escreverLinha(letras);
+       
+        historico.fecharArquivo();
+    }
+    
+    public void verHistorico() {
+        Arquivo historico = new Arquivo("db/historico.txt");
+        String linha, historicoCompleto = "";
+        
+        historico.abrirLeitura();
+        linha = historico.lerLinha();
+        
+        while (linha!=null) {
+            historicoCompleto = historicoCompleto + linha + "\n";   
+            linha = historico.lerLinha();
+        }
+        historicoCompleto = historicoCompleto;
+        historico.fecharArquivo();
+        System.out.println(historicoCompleto);
     }
 }
