@@ -9,13 +9,16 @@ public class Jogo {
     Historico historico;
 
     public Jogo() {
+
         logica = new Logica();
         historico = new Historico();
-        String palavraSorteada = logica.sorteaPalavra();
-        // System.out.println(palavraSorteada);
 
-        String letrasUsadas = "  Letras Usadas: ";
+        String palavraSorteada = logica.sorteaPalavra();
+        String letrasUsadas = "";
         String digitos = "";
+
+        System.out.println(palavraSorteada); // esconder palavra
+
         while (logica.temChance()) {
             String[] boneca = logica.desenhaBoneco(true);
 
@@ -26,19 +29,23 @@ public class Jogo {
             char letra = Entrada.leiaChar(telinha);
             letra = (letra + "").toLowerCase().charAt(0);
 
-            letrasUsadas += letra + ", ";
-
-            if (digitos.contains(String.valueOf(letra))) {
+            if (letrasUsadas.contains(String.valueOf(letra))) {
                 System.out.println(letra + " - Está letra já foi escolhida!");
-            }
-
-            if (palavraSorteada.contains(String.valueOf(letra))) {
-                System.out.println("Acertou!");
-                digitos += letra;
             } else {
-                System.out.println("Errou!");
-                logica.adicionaErro();
 
+                letrasUsadas += letra + ", ";
+
+                if (palavraSorteada.contains(String.valueOf(letra))) {
+                    System.out.println("Acertou!");
+                    digitos += letra;
+                } else {
+                    System.out.println("Errou!");
+                    logica.adicionaErro();
+                    if (logica.getErros() == 6) {
+                        historico.salvarHistorico(letrasUsadas, palavraSorteada);
+                        logica.gameOver();
+                    }
+                }
             }
 
             if (letra == '3') {
@@ -47,7 +54,6 @@ public class Jogo {
             }
 
             String palavraAtualizada = atualizaTraco(palavraSorteada, digitos);
-
             if (palavraSorteada.equals(palavraAtualizada)) {
                 historico.salvarHistorico(letrasUsadas, palavraSorteada);
                 System.out.println("Parabéns!! - Jogo Finalizado");
@@ -58,8 +64,6 @@ public class Jogo {
                 break;
             }
         }
-        historico.salvarHistorico(letrasUsadas, palavraSorteada);
-
     }
 
     public String atualizaTraco(String palavra, String digitos) {

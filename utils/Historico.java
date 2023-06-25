@@ -3,26 +3,25 @@ package utils;
 public class Historico {
 
     public void salvarHistorico(String letras, String palavraSorteada) {
-        Arquivo historico = new Arquivo("db/historico.txt");
+        Arquivo historicoArquivo = new Arquivo("db/historico.txt");
         String linha, historicoCompleto = "";
 
-        historico.abrirLeitura();
-        linha = historico.lerLinha();
+        historicoArquivo.abrirLeitura();
+        linha = historicoArquivo.lerLinha();
 
         while (linha != null) {
             historicoCompleto = historicoCompleto + linha + "\n";
-            linha = historico.lerLinha();
+            linha = historicoArquivo.lerLinha();
         }
 
-        historico.fecharArquivo();
-        historico.abrirEscrita();
+        historicoArquivo.fecharArquivo();
+        historicoArquivo.abrirEscrita();
 
-        historico.escreverLinha(historicoCompleto);
-        historico.escreverLinha("#######################################");
-        historico.escreverLinha("   Palavra soteada: " + palavraSorteada);
-        historico.escreverLinha(letras);
-
-        historico.fecharArquivo();
+        historicoArquivo.escreverLinha(historicoCompleto);
+        historicoArquivo.escreverLinha("#######################################");
+        historicoArquivo.escreverLinha("Palavra soteada: " + palavraSorteada);
+        historicoArquivo.escreverLinha("Letras usadas: " + letras);
+        historicoArquivo.fecharArquivo();
     }
 
     public void verHistorico() {
@@ -37,7 +36,8 @@ public class Historico {
             historicoCompleto = historicoCompleto + linha + "\n";
             linha = historicoArquivo.lerLinha();
         }
-        historicoCompleto = historicoCompleto;
+        // não sei oque isso faz
+        // historicoCompleto = historicoCompleto;
         historicoArquivo.fecharArquivo();
         System.out.println(historicoCompleto);
     }

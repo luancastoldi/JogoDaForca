@@ -1,24 +1,28 @@
 
 #######################################
-   Palavra soteada:  segredo
-  Letras Usadas: 3, 
+Palavra soteada:  montanha
+Letras usadas: m, o, a, t, b, n, h, 
 
 #######################################
-   Palavra soteada:  contentamento
-  Letras Usadas: a, s, d, f, g, h, j, 
+Palavra soteada:  caderno
+Letras usadas: c, v, b, n, m, q, p, i, 
 
 #######################################
-   Palavra soteada:  filha
-  Letras Usadas: 3, 
+Palavra soteada:  bebe
+Letras usadas: p, o, u, i, b, m, ï¿½, 
 
 #######################################
-   Palavra soteada:  sonho
-  Letras Usadas: a, p, e, m, c, q, 
+Palavra soteada:  historia
+Letras usadas: z, x, c, v, b, n, 
 
 #######################################
-   Palavra soteada:  metal precioso
-  Letras Usadas: p, a, l, a, r, o, c, i, n, m, e, t, s, 
+Palavra soteada:  contentamento
+Letras usadas: x, c, v, b, n, m, ., ç, l, 
 
 #######################################
-   Palavra soteada:  metal precioso
-  Letras Usadas: p, a, l, a, r, o, c, i, n, m, e, t, s, 
+Palavra soteada:  ilha
+Letras usadas: i, l, h, a, 
+
+#######################################
+Palavra soteada:  parente mais velho
+Letras usadas: z, x, c, v, b, n, m, ., ç, 

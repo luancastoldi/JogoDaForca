@@ -6,6 +6,7 @@ import utils.Historico;
 public class Menu {
       Logica logica;
       Historico historico;
+      
       public Menu () {
 
             //inicializa

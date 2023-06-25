@@ -9,7 +9,7 @@ public class GameOver {
         if(escolha){
             new Jogo();
         }else{
-            System.exit(0);
+            new Menu();
         }
     }
 }
