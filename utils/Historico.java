@@ -1,5 +1,5 @@
 package utils;
-
+import tela.Menu;
 public class Historico {
 
     public void salvarHistorico(String letras, String palavraSorteada) {
@@ -40,5 +40,6 @@ public class Historico {
         // historicoCompleto = historicoCompleto;
         historicoArquivo.fecharArquivo();
         System.out.println(historicoCompleto);
+        new Menu();
     }
 }

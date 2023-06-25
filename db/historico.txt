@@ -26,3 +26,7 @@ Letras usadas: i, l, h, a,
 #######################################
 Palavra soteada:  parente mais velho
 Letras usadas: z, x, c, v, b, n, m, ., ç, 
+
+#######################################
+Palavra soteada:  recipiente
+Letras usadas: a, b, c, e, d, f, g, h, 
