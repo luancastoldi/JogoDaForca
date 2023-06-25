@@ -9,7 +9,7 @@ Letras usadas: c, v, b, n, m, q, p, i,
 
 #######################################
 Palavra soteada:  bebe
-Letras usadas: p, o, u, i, b, m, �, 
+Letras usadas: p, o, u, i, b, m, ï¿½, 
 
 #######################################
 Palavra soteada:  historia
@@ -17,15 +17,11 @@ Letras usadas: z, x, c, v, b, n,
 
 #######################################
 Palavra soteada:  contentamento
-Letras usadas: x, c, v, b, n, m, ., �, l, 
+Letras usadas: x, c, v, b, n, m, ., ç, l, 
 
 #######################################
 Palavra soteada:  ilha
 Letras usadas: i, l, h, a, 
-
-#######################################
-Palavra soteada:  parente mais velho
-Letras usadas: z, x, c, v, b, n, m, ., �, 
 
 #######################################
 Palavra soteada:  recipiente
